@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    stages {
+        stage ('compilation') {
+            steps {
+                sh "echo hello dear. compile"
+            }
+        }
+        stage ("package") {
+            steps {
+                sh "echo hello dear. package"
+            }
+        }
+        stage ("depolyment") {
+            steps {
+                sh "echo hello dear. clean"
+            }
+        }
+        stage ("finalize") {
+            steps {
+                sh "echo hello dear.initializing"
+            }
+        }
+
+
+    } 
+
+
+}
